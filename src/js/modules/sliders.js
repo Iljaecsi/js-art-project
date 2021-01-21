@@ -63,7 +63,7 @@ const sliders = (slides, dir, prev, next) => {
     clearInterval(paused);
   });
   activateAnimation();
-  
+
   items[0].parentNode.addEventListener('mouseleave', () => {
     activateAnimation();
   });

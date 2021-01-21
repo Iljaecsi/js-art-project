@@ -44,7 +44,7 @@ const modals = () => {
     });
 
     modal.addEventListener('click', (e) => {
-      if (e.target === modal && closeClickOverlay) {
+      if (e.target === modal) {
         windows.forEach(item => {
           item.style.display = 'none';
         });
