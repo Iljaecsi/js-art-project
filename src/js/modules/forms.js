@@ -1,4 +1,5 @@
 // import checkNumInputs from './checkNumInputs';
+import {postData} from "../services/requests";
 
 const forms = () => {
   const form = document.querySelectorAll('form');
@@ -21,13 +22,7 @@ const forms = () => {
     question: 'assets/question.php',
   };
 
-  const postData = async (url, data) => {
-    let res = await fetch(url, {
-      method: "POST",
-      body: data,
-    });
-    return await res.text();
-  };
+
 
   const clearInputs = () => {
     inputs.forEach(item => {
@@ -75,7 +70,7 @@ const forms = () => {
       item.closest('.popup-design') || item.classList.contains('calc_form') ? api = path.designer : api = path.question;
 
 
-      postData('assets/server.php',formData)
+      postData(api,formData)
         .then(res => {
           console.log(res);
           statusImg.setAttribute('src', message.ok);
