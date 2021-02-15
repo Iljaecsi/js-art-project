@@ -1,3 +1,2 @@
 # js-art-project
-
-# DEMO: https://js-art-project.netlify.app
+# https://js-art-project.netlify.app
