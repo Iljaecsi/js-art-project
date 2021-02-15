@@ -1,2 +1,2 @@
 # js-art-project
-# https://js-art-project.netlify.app
+Preview: https://js-art-project.netlify.app
